@@ -35,7 +35,7 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
        
         <Pressable
           style={styles.Button}
-          onPress={() => navigation.navigate('login')}
+          onPress={() => navigation.navigate('Register')}
         >
         <Text style={{color: 'white', textAlign: 'center'}}>Join MFN Network</Text>
         </Pressable>

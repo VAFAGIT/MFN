@@ -77,7 +77,7 @@ const App: React.FC = () => {
          
         }}
       >
-      {/* <Icon name="company-icon-name" size={10} color="#000" /> */}
+      
 
         <Text
             style={styles.Text}

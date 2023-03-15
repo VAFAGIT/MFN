@@ -90,7 +90,7 @@ const RegisterScreen = ({ navigation }: RegisterScreenProps) => {
           style={styles.Button}
           onPress={() => {
             register(name, ICE, author, password, latitude, longitude);
-            navigation.navigate('login');
+            navigation.navigate('MAP');
           }}
         >
           <Text style={{ color: "white", textAlign: "center" }}>Register</Text>
