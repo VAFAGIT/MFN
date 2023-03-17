@@ -40,75 +40,39 @@ const Navigation = () => {
           },
          }}
       >
-       
-
-        <Stack.Screen 
-          name="/"
-          component={WelcomeScreen}
-          options={{ 
-            title: 'MFN' 
-          }}
-        />
-
-        <Stack.Screen 
-          name="MAP"
-          component={HomeScreen}
-        />
-        
-        <Stack.Screen 
-          name="Companies"
-          component={CompaniesScreen}
-          options={{
-            title: 'Companies'
-          }}
-        />
-
-        <Stack.Screen 
-          name="login"
-          component={LoginScreen}
-        />
-
-        <Stack.Screen 
-          name="Register"
-          component={RegisterScreen}
-        />
-
-
-
-
-        {/* {splashLoading ? (
-          <Stack.Screen
-            name="Splash"
-            component={SplashScreen}
-            options={{ headerShown: false }}
-          />
-        ) : userInfo.data ? (
-          <Stack.Screen
-            name="Home"
-            component={HomeScreen}
-            options={{
-              title: 'MAP',
-              headerRight: () => {
-                <Button title={"LogOut"} 
-                  onPress={() => alert("by")}
-                />
-              }
+      
+          <Stack.Screen 
+            name="/"
+            component={WelcomeScreen}
+            options={{ 
+              title: 'MFN' 
             }}
           />
-        ) : (
-          <>
-            <Stack.Screen
-              name="login"
-              component={LoginScreen}
-              
-            />
-            <Stack.Screen
-              name="Register"
-              component={RegisterScreen}
-              options={{ headerShown: false }}
-            />
-          </>
-        )} */}
+
+          <Stack.Screen 
+            name="MAP"
+            component={HomeScreen}
+          />
+          
+          <Stack.Screen 
+            name="Companies"
+            component={CompaniesScreen}
+            options={{
+              title: 'Companies'
+            }}
+          />
+
+          <Stack.Screen 
+            name="login"
+            component={LoginScreen}
+          />
+
+          <Stack.Screen 
+            name="Register"
+            component={RegisterScreen}
+          />
+
+
       </Stack.Navigator>
     </NavigationContainer>
   );

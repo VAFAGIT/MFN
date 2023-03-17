@@ -15,14 +15,14 @@ import { NavigationProp } from '@react-navigation/native';
 
 
 
-interface LoginScreenProps {
+interface WelcomeScreenProps {
   navigation: NavigationProp<any>;
 }
 
-const LoginScreen = ({navigation}: LoginScreenProps) => {
-  const [ICE, setICE] = useState<string>();
-  const [password, setPassword] = useState<string>();
-  const {isLoading, login} = useContext<any>(AuthContext);
+const WelcomeScreen = ({navigation}: WelcomeScreenProps) => {
+  // const [ICE, setICE] = useState<string>();
+  // const [password, setPassword] = useState<string>();
+  const {isLoading} = useContext<any>(AuthContext);
   const img = require('../assets/Bgg.png');
 
   return (
@@ -47,12 +47,6 @@ const LoginScreen = ({navigation}: LoginScreenProps) => {
         <Text style={{color: 'white', textAlign: 'center'}}>MAP</Text>
         </Pressable>
 
-        {/* <Pressable
-          style={styles.Button}
-          onPress={() => navigation.navigate('Companies')}
-        >
-        <Text style={{color: 'white', textAlign: 'center'}}>Companies</Text>
-        </Pressable> */}
 
         
       </View>
@@ -91,4 +85,4 @@ const styles = StyleSheet.create({
 });
 
 
-export default LoginScreen;
+export default WelcomeScreen;

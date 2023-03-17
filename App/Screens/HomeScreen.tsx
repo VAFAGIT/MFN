@@ -56,8 +56,7 @@ const App: React.FC = () => {
                 title="TEST"
             /> */}
 
-        {Users &&
-          Users.map((User) => (
+        {Users && Users.map((User) => (
             <Marker
               key={User._id}
               coordinate={{
@@ -103,8 +102,10 @@ const styles = StyleSheet.create({
     marginLeft: 1,
   },
   Text: {
-        color: "#000",
+        color: "#ccc",
         textAlign: "center",
+        justifyContent:"center",
+        alignContent:"center",
         fontSize: 15,
   }
 });

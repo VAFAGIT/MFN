@@ -15,13 +15,16 @@ import {
 } from 'react-native';
 
 const RegisterScreen = ({ navigation }: RegisterScreenProps) => {
+
   const [name, setName] = useState<string>("");
   const [ICE, setICE] = useState<string>("");
   const [author, setAuthor] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [latitude, setLatitude] = useState<number>(0);
   const [longitude, setLongitude] = useState<number>(0);
+
   const imgj = require("../assets/ff.png");
+  
   const [location, setLocation] = useState<LocationObject>();
   const [errorMsg, setErrorMsg] = useState<string>("");
 
